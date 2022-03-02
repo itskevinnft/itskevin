@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      connectMetamask();
+      }, false);
+   </script>
+   <style>
+      body{
+      background-color:  black;
+      font-family: 'Roboto Mono', monospace; 
+      color:  white;
+      text-align: center;
+      }
+      .connection, #connection {
+      margin-bottom:  3rem;
+      }
+      .kevin, #kevin {
+      width: 20rem;
+      }
+      .title, #title {
+      font-size: 3rem;
+      }
+      .sub, #sub {
+      font-size: 1.5rem;
+      }
+      .to_mint, #to_mint{
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      font-size: 3rem;
+      width: 6rem;
+      text-align: center;
+      }
+      .button, #button{
+      width: 7rem;
+      height: 3rem;
+      margin-bottom: 5rem;
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      font-size: 1.2rem;
+      }
+   </style>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>It's Kevin! NFT - Your Favorite Green Friend</title>
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
+      <script src="main.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <label id="connection">Disconnected</label>
+      <br /><br /><br /><br />
+      <label id="title">It's Kevin!</label>
+      <br><br /><br /><br />
+      <img id="kevin" src="./one.png">
+      <br><br><br>
+      <label id="sub">700 Kevins. <br>400 free mint.</label>
+      <br><br>
+      <label for="to_mint"></label>
+      <br>
+      <input
+         id="to_mint"
+         type="number"
+         name="to_mint"
+         value="1"
+         min="1"
+         max="5"
+         required
+         />
+      <br /><br>
+      <button id="button" onclick="mint()">Mint</button>
+   </body>
+</html>
+
